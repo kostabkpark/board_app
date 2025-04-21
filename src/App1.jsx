@@ -5,16 +5,16 @@ class App extends React.Component {
     constructor() {
         super();
         this.state = {
-            counter : 0
+            list : []
         }
     }
     
     componentDidMount = () => {
-        console.log("화면이 렌더링되었습니다.");
+        console.log("backend db에서 게시판 글 목록을 가져왔습니다.");
     }
 
     componentDidUpdate= () => {
-        console.log("props 값이 변경되었습니다.");
+        console.log("게시판 글이 변경되었습니다.");
     }
 
     componentWillUnmount = () => {
