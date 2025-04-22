@@ -4,6 +4,7 @@ import Header from "./components/header"
 import Home from "./routes/home"
 import Save from "./routes/save"
 import List from "./routes/list"
+import Detail from "./routes/detail"
 function App() {
   return (
     <>
@@ -13,6 +14,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/save" element={<Save />} />
           <Route path="/list" element={<List />} />
+          <Route path="/api/boards/:id" element={<Detail />} />
         </Routes>
       </BrowserRouter>
     </>
